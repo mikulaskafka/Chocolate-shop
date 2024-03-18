@@ -8,6 +8,11 @@ addToCartButtons.forEach((button) => {
     const chocolateName =
       chocolateCard.querySelector("h3").textContent;
 
+window.dataLayer = window.dataLayer || [];
+window.dataLayer.push({
+ 'productName': ${chocolateName}
+ });
+    
     alert(`Added ${chocolateName} to the cart`);
   });
 });
