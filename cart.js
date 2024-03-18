@@ -10,7 +10,7 @@ addToCartButtons.forEach((button) => {
 
 window.dataLayer = window.dataLayer || [];
 window.dataLayer.push({
- 'productName': `${chocolateName}`
+ 'productName': chocolateName
  });
     
     alert(`Added ${chocolateName} to the cart`);
