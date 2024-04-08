@@ -6,8 +6,10 @@ addToCartButtons.forEach((button) => {
   button.addEventListener("click", (event) => {
     const chocolateCard = 
       event.target.parentElement;
-    const chocolateCardIndex = 
-      chocolateCard.index;
+    const allChocolateCards =
+      Array.from(chocolateCard.parentElement.querySelectorAll('.chocolate-card'));
+    const chocolateCardIndex =
+      allChocolateCards.indexOf(chocolateCard);
     const chocolateName = 
       chocolateCard.querySelector("h3").textContent;
     const chocolatePrice =
