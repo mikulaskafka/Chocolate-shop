@@ -7,14 +7,14 @@ addToCartButtons.forEach((button) => {
     const chocolateCard = 
       event.target.parentElement;
     const allChocolateCards =
-      Array.from(chocolateCard.parentElement.querySelectorAll('.chocolate-card'));
+      document.querySelectorAll('body .chocolate-card');
     const chocolateCardIndex =
       allChocolateCards.indexOf(chocolateCard);
-    const chocolateName = 
+    const chocolateName =
       chocolateCard.querySelector("h3").textContent;
     const chocolatePrice =
       chocolateCard.querySelector("p").textContent;
-    const chocolateList = 
+    const chocolateList =
       window.location.pathname.includes("/products.html") ? "Explore our chocolates" : "Featured Chocolates";
 
 window.dataLayer = window.dataLayer || [];
